@@ -6,8 +6,14 @@ Catch your errors and send it to telegram
 
 Add tele_catcher to your pubspec.yaml
 ```yaml
-tele_catcher:
-    git: https://github.com/alejandrogiubel/tele_catcher
+dependencies:
+  tele_catcher: ^1.0.0
+```
+
+```yaml
+dependencies:
+  tele_catcher:
+      git: https://github.com/alejandrogiubel/tele_catcher
 ```
 
 ## Usage

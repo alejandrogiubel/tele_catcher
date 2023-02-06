@@ -33,3 +33,7 @@
 ## 0.0.9
 
 * Add license
+
+## 1.0.0
+
+* Update doc
