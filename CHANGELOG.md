@@ -21,3 +21,7 @@
 ## 0.0.6
 
 * Remove test folder
+
+## 0.0.7
+
+* Skip test in workflow
