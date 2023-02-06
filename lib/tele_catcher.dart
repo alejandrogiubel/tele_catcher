@@ -10,7 +10,7 @@ class TeleCatcher {
   static late int _chatId;
 
   ///Start tele catcher bot.
-  ///In order to get the chat idread
+  ///In order to get the chat id read
   ///https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id
   static Future<void> start(String botToken, int chatId) async {
     final username = (await Telegram(botToken).getMe()).username;

@@ -5,7 +5,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   //Init TeleCatcherBot with your own bot token and chat id
-  //In order to get the chat idread
+  //In order to get the chat id read
   //https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id
   await TeleCatcher.start('1111111111:aqwdergydsghbnhytyjuhf304-dkmtihndeyu58', 000000000);
 
