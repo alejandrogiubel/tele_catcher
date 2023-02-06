@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * Do not send message when starting the bot
+
+## 0.0.6
+
+* Remove test folder
