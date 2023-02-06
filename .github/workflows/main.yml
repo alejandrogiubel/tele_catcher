@@ -11,23 +11,23 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  # This workflow contains a single job called "publishing"
+  publishing:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: 'Checkout'
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+        uses: actions/checkout@main
 
-      - name: Dart and Flutter Package Publisher
+      - name: tele_catcher
         # You may pin to the exact commit or the version.
         # uses: k-paxian/dart-package-publisher@9e7cb9527b5ee7ef40863e5a2d6c5bfc41973157
-        uses: k-paxian/dart-package-publisher@1.5
+        uses: k-paxian/dart-package-publisher@master
         with:
           # (Required) Token from ~/.pub-cache/credentials.json. Use secrets.OAUTH_ACCESS_TOKEN
           accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
           # (Required) Token from ~/.pub-cache/credentials.json. Use secrets.OAUTH_REFRESH_TOKEN
           refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
-          skipTests: true
