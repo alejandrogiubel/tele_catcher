@@ -25,3 +25,7 @@
 ## 0.0.7
 
 * Skip test in workflow
+
+## 0.0.8
+
+* Add home page to pubspec.yaml
