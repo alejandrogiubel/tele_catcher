@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Update workflow
+
+## 0.0.5
+
+* Do not send message when starting the bot

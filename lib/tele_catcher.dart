@@ -17,7 +17,6 @@ class TeleCatcher {
     _teledart = TeleDart(botToken, Event(username!));
     _chatId = chatId;
     _teledart.start();
-    _teledart.sendMessage(chatId, 'Hello, TeleCatcherBot started 🫡');
   }
 
   static Future<void> sendError(String infoToReport) async {
