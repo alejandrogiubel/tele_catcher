@@ -1,6 +1,6 @@
 name: tele_catcher
 description: Catch your errors and send it to telegram
-version: 1.1.0
+version: 1.1.1
 homepage: https://github.com/alejandrogiubel/tele_catcher
 
 environment:
@@ -8,8 +8,6 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
   package_info_plus: ^3.0.2
   teledart: ^0.5.4
 
