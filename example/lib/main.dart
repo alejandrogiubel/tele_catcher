@@ -29,25 +29,12 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         body: Center(
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 5000,
-                    height: 100,
-                    color: Colors.red,
-                  ),
-                ],
-              ),
-              FilledButton(
-                onPressed: () {
-                  //Send custom message to TeleCathcerBot
-                  TeleCatcher.sendError('This is a simple message');
-                },
-                child: const Text('Send'),
-              ),
-            ],
+          child: FilledButton(
+            onPressed: () {
+              //Send custom message to TeleCathcerBot
+              TeleCatcher.sendError('This is a simple message');
+            },
+            child: const Text('Send'),
           ),
         ),
       ),
