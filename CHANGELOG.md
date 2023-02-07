@@ -1,3 +1,7 @@
+## 1.1.1
+
+* Optimize code
+
 ## 1.1.0
 
 * Add more app info to report
