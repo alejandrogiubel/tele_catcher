@@ -1,3 +1,7 @@
+## 1.2.0
+
+* Update dependencies
+
 ## 1.1.1
 
 * Optimize code
