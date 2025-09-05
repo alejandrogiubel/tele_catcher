@@ -7,7 +7,7 @@ Catch your errors and send it to telegram
 Add tele_catcher to your pubspec.yaml
 ```yaml
 dependencies:
-  tele_catcher: ^1.1.0
+  tele_catcher: ^1.3.0
 ```
 
 ```yaml
