@@ -1,9 +1,9 @@
-library tele_catcher;
-
 import 'dart:io';
+
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
+import 'package:universal_platform/universal_platform.dart';
 
 /// A TeleCatcher.
 class TeleCatcher {
@@ -21,9 +21,11 @@ class TeleCatcher {
   }
 
   static Future<void> sendError(String infoToReport) async {
-    final platform = Platform.operatingSystem;
+    final platform = UniversalPlatform.operatingSystem;
     final timeStamp = DateTime.now();
-    final osVersion = Platform.operatingSystemVersion;
+    final osVersion = UniversalPlatform.isWeb
+        ? 'Web'
+        : Platform.operatingSystemVersion;
 
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
 
@@ -32,7 +34,8 @@ class TeleCatcher {
     final version = packageInfo.version;
     final buildNumber = packageInfo.buildNumber;
 
-    final report = '''
+    final report =
+        '''
 Hello, TeleCatcherBot reporting 🫡.
 OS: $platform
 OS Version: $osVersion
